@@ -4,7 +4,7 @@
   angular.module('myFirstAngularApp',[])
 
   .controller('myFirstController',function ($scope){
-    $scope.name="Tejaswi";
-    $scope.car="JAZZ";
+    $scope.name='Tejaswi';
+    $scope.car='JAZZ';
   });
 })();
