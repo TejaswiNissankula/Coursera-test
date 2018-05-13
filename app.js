@@ -1,20 +1,33 @@
-(function (){
-  'use strict';
-  angular.module('myFirstAngularApp',[])
+(function(){
 
-  .controller('NameCalculatorController',function ($scope){
-    $scope.name='';
+  'use strict';
+
+  angular.module('NameCalculator',[])
+
+  .controller('NameCalculatorController',function($scope){
+
+    $scope.name="";
     $scope.totalvalue=0;
-    $scope.decimalCalculator=function (){
-      var totalnumericvalue=mycalculator($scope.name);
+    $scope.displayNumeric=function(){
+
+      var totalnumericvalue=0;
       $scope.totalvalue=totalnumericvalue;
 
-  };
-  function mycalculator(string){
-    var totalstringvalue=0;
-    for(var i=0;i<string.lenght;i++)
-    totalstringvalue+=string.charCodeAt(i);
-  }
+    }
+
+    function calculatenumericvalue(string){
+
+      for(var i=0;i<strong.length;i++){
+
+        totalnumericvalue+=string.charCodeAt(i);
+      }
+      return totalnumericvalue;
+
+    }
+
 
   });
-})();
+
+}
+
+)();
