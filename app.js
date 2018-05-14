@@ -10,18 +10,18 @@
     $scope.totalvalue=0;
     $scope.displayNumeric=function(){
 
-      var totalnumericvalue=0;
+      var totalnumericvalue=calculatenumericvalue($scope.name);
       $scope.totalvalue=totalnumericvalue;
 
     }
 
     function calculatenumericvalue(string){
+      var totalstringnumericvalue=0;
+      for(var i=0;i<string.length;i++){
 
-      for(var i=0;i<strong.length;i++){
-
-        totalnumericvalue+=string.charCodeAt(i);
+        totalstringnumericvalue+=string.charCodeAt(i);
       }
-      return totalnumericvalue;
+      return totalstringnumericvalue;
 
     }
 

@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html ng-app="myFirstAngularApp">
-  <head>
+<html ng-app="NameCalculator" greeting="hello">
+  <head hubby="sarat">
     <meta charset="utf-8">
-    <script src="angular.min.js"></script>
-    <script src="app.js" ></script>
+    //<script src="angular.min.js"></script>
+    //<script src="app.js" ></script>
     <title>My first Angular Js page</title>
   </head>
   <body>
-    
-    <div ng-controller="NameCalculatorController">
+
+    <div id ="target" ng-controller="NameCalculatorController">
     <h1>Name Calculator</h1>
       <div>
         Your Name :
-        <input type="text" ng-model="name" ng-keyup="decimalCalculator();">
+        <input type="text" ng-model="name" ng-keyup="displayNumeric();">
       </div>
       <div>
-        Total Output value :{{totalvalue}}
+        Total Output value : {{totalvalue}} {{name}}
       </div>
     </div>
+
+    <script>
+
+    var x1 = function () {
+  // do something, PLEASE!
+  return "Blah!";
+    };
+
+    var x2 = x1();
+
+    console.log('x1::',x1);
+
+
+
+    console.log('x2::',x2);
+
+function x3(arg) {
+  return arg; // Ha-ha! That's all I do!
+}
+
+var x4 = x3(x1);
+
+var x5 = x3(x2);
+
+var x6 = x3(x1());
+
+
+    </script>
   </body>
 </html>
