@@ -1,32 +1,26 @@
-(function(){
+(function (){
 
-  'use strict';
+  angular.module('DIApp',[])
 
-  angular.module('NameCalculator',[])
+  .controller('DIController',DIController);
 
-  .controller('NameCalculatorController',function($scope){
+  function DIController($scope,$filter){
 
-    $scope.name="";
-    $scope.totalvalue=0;
-    $scope.displayNumeric=function(){
+    $scope.name="Tejaswi";
+    $scope.upper=function (){
 
-      var totalnumericvalue=calculatenumericvalue($scope.name);
-      $scope.totalvalue=totalnumericvalue;
+      var upCase=$filter('uppercase');
+      $scope.name=upCase($scope.name);
 
-    }
+    };
 
-    function calculatenumericvalue(string){
-      var totalstringnumericvalue=0;
-      for(var i=0;i<string.length;i++){
+  }
 
-        totalstringnumericvalue+=string.charCodeAt(i);
-      }
-      return totalstringnumericvalue;
+function AnotateMe(hello,baby,sarat){
 
-    }
-
-
-  });
+    return "My Baby!!!";
+}
+console.log(AnotateMe.toString());
 
 }
 

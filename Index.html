@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="NameCalculator" greeting="hello">
+<html ng-app="DIApp" greeting="hello">
   <head hubby="sarat">
     <meta charset="utf-8">
     //<script src="angular.min.js"></script>
@@ -8,43 +8,17 @@
   </head>
   <body>
 
-    <div id ="target" ng-controller="NameCalculatorController">
+    <div id ="target" ng-controller="DIController">
     <h1>Name Calculator</h1>
       <div>
         Your Name :
-        <input type="text" ng-model="name" ng-keyup="displayNumeric();">
+        <input type="text" ng-model="name" ng-blur="upper();">
       </div>
       <div>
-        Total Output value : {{totalvalue}} {{name}}
+        Total Output value :  {{name}}
       </div>
     </div>
 
-    <script>
 
-    var x1 = function () {
-  // do something, PLEASE!
-  return "Blah!";
-    };
-
-    var x2 = x1();
-
-    console.log('x1::',x1);
-
-
-
-    console.log('x2::',x2);
-
-function x3(arg) {
-  return arg; // Ha-ha! That's all I do!
-}
-
-var x4 = x3(x1);
-
-var x5 = x3(x2);
-
-var x6 = x3(x1());
-
-
-    </script>
   </body>
 </html>
