@@ -17,10 +17,11 @@
       if(item!=null && item!=''){
         itemList=item.split(',');
         console.log('item::'+item);
+        console.log('itemList',itemList+' itemList.length ::',itemList.length);
       }
       //else
         //itemList.Length=0;
-      console.log('itemList',itemList+' itemList.length ::',itemList.length);
+      console.log('itemList',itemList);
 
         if(itemList.length>0 && itemList.length<=3){
           $scope.displayMessage="Enjoy!";
