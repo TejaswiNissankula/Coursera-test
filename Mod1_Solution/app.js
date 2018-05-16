@@ -23,20 +23,33 @@
         //itemList.Length=0;
       console.log('itemList',itemList);
 
+
+
         if(itemList=='undefined' || itemList==null || itemList==''){
 
           $scope.displayMessage="Please enter data first";
 
-        }else if(itemList.length>0 && itemList.length<=3){
-          $scope.displayMessage="Enjoy!";
+        }else {
 
-        }else if(itemList.length>3){
+          for(var i=0;i<itemList.length;i++){
 
-          $scope.displayMessage="Too much!";
+            if(itemList[i]==""){
+              itemList[i].remove;
+            }
 
-        }
+          }
+          console.log('itemList else loop',itemList);
+            if(itemList.length>0 && itemList.length<=3){
+                $scope.displayMessage="Enjoy!";
 
-    };
+              }else if(itemList.length>3){
+
+                $scope.displayMessage="Too much!";
+
+              }
+          }
+
+      };
 
   }
 
