@@ -11,12 +11,12 @@
     $scope.displayMessage="";
     $scope.splitname=function (){
 
-      var itemList=$scope.name.split(',');
+      var item=$scope.name;
+      var itemList=item.split(,);
 
       console.log('itemList',itemList+' itemList.length ::',itemList.length);
 
         if(itemList.length<=3){
-          console.log('itemList.size',itemList.size);
           $scope.displayMessage="Enjoy!";
 
         }else if(itemList.length>3){
