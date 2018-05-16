@@ -16,14 +16,14 @@
 
       console.log('itemList',itemList+' itemList.length ::',itemList.length);
 
-        if(itemList.length<=3){
+        if(itemList.length>1 && itemList.length<=3){
           $scope.displayMessage="Enjoy!";
 
         }else if(itemList.length>3){
 
           $scope.displayMessage="Too much!";
 
-        }else if(itemList.length==0){
+        }else if(itemList.length==1){
 
           $scope.displayMessage="Please enter data first";
 
