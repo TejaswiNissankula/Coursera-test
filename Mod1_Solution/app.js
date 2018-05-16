@@ -12,18 +12,22 @@
     $scope.splitname=function (){
 
       var item=$scope.name;
-      var itemList=item.split(',');
-
+      console.log('item::'+item);
+      var itemList;
+      if(item!=null || item!='')
+        itemList=item.split(',');
+      //else
+        //itemList.Length=0;
       console.log('itemList',itemList+' itemList.length ::',itemList.length);
 
-        if(itemList.length>1 && itemList.length<=3){
+        if(itemList.length>0 && itemList.length<=3){
           $scope.displayMessage="Enjoy!";
 
         }else if(itemList.length>3){
 
           $scope.displayMessage="Too much!";
 
-        }else if(itemList.length==1){
+        }else if(itemList.length==0){
 
           $scope.displayMessage="Please enter data first";
 
