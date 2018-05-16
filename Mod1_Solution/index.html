@@ -1,0 +1,19 @@
+<html ng-app="LunchCheck">
+
+  <head>
+    <script src="angular.min.js"/>
+    <script src="app.js"/>
+
+  </head>
+
+  <body ng-controller="LunchCheckController">
+
+    <div>
+      <input type="text" ng-model={{name}}/>
+      <div>{{displayMessage}}</div><br>
+      <input type="button" ng-click={{splitname()}}
+    </div>
+
+  </body>
+
+</html>
