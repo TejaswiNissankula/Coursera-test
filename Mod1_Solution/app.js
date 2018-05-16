@@ -13,8 +13,10 @@
 
       var itemList=$scope.name.split(',');
 
-        if(itemList.size<=3){
+      console.log('itemList.size',itemList.size);
 
+        if(itemList.size<=3){
+          console.log('itemList.size',itemList.size);
           $scope.displayMessage="Enjoy!";
 
         }else if(itemList.size>3){
