@@ -14,7 +14,7 @@
       var item=$scope.name;
       console.log('item::'+item);
       var itemList;
-      if(item!=null || item!=''){
+      if(item!=null && item!=''){
         itemList=item.split(',');
         console.log('item::'+item);
       }
