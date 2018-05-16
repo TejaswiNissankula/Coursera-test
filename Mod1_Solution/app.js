@@ -5,7 +5,7 @@
 
   LunchCheckController.$inject=['$scope'];
 
-  function LunchCheckController(){
+  function LunchCheckController($scope){
 
     $scope.name="";
     $scope.displayMessage="";
