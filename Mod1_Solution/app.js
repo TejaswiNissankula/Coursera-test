@@ -34,7 +34,7 @@
           for(var i=0;i<itemList.length;i++){
 
             if(itemList[i]==""){
-              itemList.remove(i);
+              itemList.splice(i,1);
             }
 
           }
