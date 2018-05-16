@@ -12,7 +12,7 @@
     $scope.splitname=function (){
 
       var item=$scope.name;
-      var itemList=item.split(,);
+      var itemList=item.split(',');
 
       console.log('itemList',itemList+' itemList.length ::',itemList.length);
 
