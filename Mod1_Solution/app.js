@@ -32,7 +32,7 @@
         }else {
 
           for(var i=0;i<itemList.length;i++){
-
+            console.log('index beofe if',i);
             if(itemList[i]==""){
               console.log('index',i);
               itemList.splice(i,1);
